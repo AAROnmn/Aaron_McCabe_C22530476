@@ -4,8 +4,7 @@ float[] flagsize = new float[10];
 
 float x = 100;
 float y = 100;
-float x1 = 325;
-float y1 = 325;
+
 
 
 void setup(){
@@ -36,12 +35,14 @@ void draw(){
  flagsize[i] = flagsize[i];
  noFill();
  fill(100);
+ 
  triangle(x,y,x + 250,200,x,350);
  
  triangle(x + 225,y + 475,x + 450,200 + 225,x + 225,350);
  
-  triangle(x + 300,y + 750,x + 500,200 + 500,x + 300,350 + 250);
-
+ triangle(x + 300,y + 750,x + 500,200 + 500,x + 300,350 + 250);
+ 
+ 
  
 
  noFill();
@@ -55,6 +56,8 @@ void draw(){
  if(x > width ){
    x = x - --x; 
  }
+ 
+
  
  
  }
