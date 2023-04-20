@@ -31,6 +31,7 @@ void draw(){
  
  rect(x + 300,y + 500,300,flagsize[i]);
  
+ 
  rect(x,y,300,flagsize[i]);
  flagsize[i] = flagsize[i];
  noFill();
@@ -41,6 +42,7 @@ void draw(){
  triangle(x + 225,y + 475,x + 450,200 + 225,x + 225,350);
  
  triangle(x + 300,y + 750,x + 500,200 + 500,x + 300,350 + 250);
+ 
  
  
  
