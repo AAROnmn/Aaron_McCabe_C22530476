@@ -23,6 +23,7 @@ flagsize[4] = 250;
 void draw(){
  background(255);
  
+ 
  fill(0);
  for(int i = 0; i < 10; i++){
  stroke(0);
