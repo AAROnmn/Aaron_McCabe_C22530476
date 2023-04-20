@@ -40,11 +40,15 @@ void draw(){
  
  triangle(x + 225,y + 475,x + 450,200 + 225,x + 225,350);
  
+  triangle(x + 300,y + 750,x + 500,200 + 500,x + 300,350 + 250);
+
+ 
 
  noFill();
  fill(0);
  circle(x + 75,y + 110,50);
  circle(x + 300,y + 340,50);
+ circle(x + 375,y + 625,50);
  noFill();
   ++x;
   
