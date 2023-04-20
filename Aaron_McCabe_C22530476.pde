@@ -1,6 +1,6 @@
 //Flag flag;
 
-float[] flagsize = new float[5];
+float[] flagsize = new float[10];
 
 
 float x = 100;
@@ -11,27 +11,29 @@ float speedy = 0;
 
 void setup(){
   size(1000,500);
-flagsize[0] = 150;
-flagsize[1] = 175;
-flagsize[2] = 200;
-flagsize[3] = 225;
+  colorMode(HSB);
+flagsize[0] = 50;
+flagsize[1] = 100;
+flagsize[2] = 150;
+flagsize[3] = 200;
 flagsize[4] = 250;
+
 }
 
 void draw(){
  background(255);
  fill(0);
- for(int i = 0; i < 5; i++){
-  fill(random(100));
- //triangle(x,y,x,y,flagsize[i],flagsize[i]);
+ for(int i = 0; i < 10; i++){
+ fill(100);
+ triangle(x,y,x + 250,200,x,350);
+ noFill();
  rect(x,y,300,flagsize[i]);
  flagsize[i] = flagsize[i];
   ++x;
-  --y;
+  //--y;
  
- if(y > height){
-  
-  
+ if(x > width ){
+   x = x - --x; 
    
  }
  
